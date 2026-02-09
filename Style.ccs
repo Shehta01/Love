@@ -1,0 +1,44 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffeef2;
+    font-family: sans-serif;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container { text-align: center; z-index: 10; }
+h1 { color: #ff4d6d; font-size: 3rem; }
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#yes-btn { background-color: #ff4d6d; color: white; margin: 10px; }
+#no-btn { background-color: #adb5bd; color: white; margin: 10px; z-index: 999; }
+
+.hidden { display: none; font-size: 3rem; color: #ff4d6d; }
+
+/* ستايل القلب المتساقط */
+.heart {
+    position: fixed;
+    top: -1vh;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+    color: #ff4d6d;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
